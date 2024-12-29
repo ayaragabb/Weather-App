@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="my-nav py-4">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-content-center"
+      >
+        <div class="icon">
+          <i class="fa-solid fa-cloud"></i>
+          <span>Weather</span>
+        </div>
+        <div
+          class="w-50 linkes d-flex flex-wrap justify-content-between align-content-center"
+        >
+          <div class="item">
+            <a href="#">home</a>
+          </div>
+          <div class="item">
+            <a href="#">news</a>
+          </div>
+          <div class="item">
+            <a href="#">live cameras</a>
+          </div>
+          <div class="item">
+            <a href="#">photo</a>
+          </div>
+          <div class="item">
+            <a href="#">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home container-fluid">
+      <div class="row">
+        <div class="input mb-4">
+          <input type="text" id="searchCity" placeholder="Find your location" />
+          <button id="find">Find</button>
+        </div>
+        <div class="col-md-4">
+          <div class="cards">
+            <div class="card mb-3 my-card">
+              <div id="today" class="card-header"></div>
+              <div class="card-body">
+                <h5 id="city" class="card-title"></h5>
+
+                <span id="todayDgree" class="card-text"></span>
+                <span class="span-style">oC</span>
+
+                <div>
+                  <img id="todayImg" src="" alt="amb" />
+                </div>
+                <span id="todayDes"></span>
+                <div
+                  class="icon d-flex flex-wrap align-content-center justify-content-between w-75 mt-3"
+                >
+                  <div>
+                    <img src="image/icon-umberella.png" alt="" />
+                    <span id="todayHuminty"></span>
+                    <span>%</span>
+                  </div>
+                  <div>
+                    <img src="image/icon-wind.png" alt="" />
+                    <span id="todaySpeed"></span>
+                    <span>k/hm</span>
+                  </div>
+                  <div>
+                    <img src="image/icon-compass.png" alt="" />
+                    <span id="todayDirec"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cards">
+            <div class="card mb-3 my-card text-center">
+              <div id="tom" class="card-header"></div>
+              <div class="card-body">
+                <div>
+                  <img id="tomImg" src="" alt="" />
+                </div>
+                <div>
+                  <span id="tomDgreeBig"></span>
+                  <span class="span-style">oC</span>
+                </div>
+                <div class="my-2">
+                  <span id="tomDgreeSma"></span>
+                  <span class="span-style">oC</span>
+                </div>
+                <p id="tomDes"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cards">
+            <div class="card mb-3 my-card text-center">
+              <div id="nextDay" class="card-header"></div>
+              <div class="card-body">
+                <div>
+                  <img id="nextImg" src="" alt="" />
+                </div>
+                <div>
+                  <span id="nextDgreeBig"></span>
+                  <span class="span-style">oC</span>
+                </div>
+                <div class="my-2">
+                  <span id="nextDgreeSma"></span>
+                  <span class="span-style">oC</span>
+                </div>
+                <p id="nextDes"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-5">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-content-center"
+      >
+        <div class="input mb-3">
+          <input
+            type="text"
+            id="search"
+            placeholder="Enter your email to subscribe..."
+          />
+          <button id="subscribe">Subscribe</button>
+        </div>
+
+        <div
+          class="icon-meda d-flex flex-wrap justify-content-center align-content-center"
+        >
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </div>
+        </div>
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

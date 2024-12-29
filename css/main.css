@@ -1,0 +1,167 @@
+.my-nav {
+  background-color: #1e202b;
+}
+.my-nav .icon span {
+  color: #fff;
+  font-size: 30px;
+}
+.my-nav .icon i {
+  color: #009ad8;
+  font-size: 50px;
+}
+.my-nav .linkes a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.my-nav .linkes .item {
+  padding: 5px 20px;
+  border: #1e202b solid 3px;
+  border-radius: 20px;
+  transition: border, 0.3s;
+}
+
+.my-nav .linkes .item:hover {
+  border: #009ad8 solid 3px;
+}
+
+.my-nav .linkes .item:hover a {
+  color: #009ad8;
+}
+
+.home {
+  height: 100vh;
+  background-color: #1e202b;
+  background-image: url(../image/banner.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.home::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home .input {
+  width: 100%;
+  position: relative;
+  /* position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 999999; */
+  z-index: 555;
+}
+.home .input input {
+  width: 100%;
+  padding: 20px 5px;
+  border-radius: 25px;
+  border: 0;
+  background-color: #1e202b;
+  color: #fff;
+}
+.home .input button {
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  width: 10%;
+  height: 90%;
+  border: 0;
+  background-color: #009ad8;
+  border-radius: 25px;
+  color: #fff;
+}
+.home .row {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.home .cards .my-card {
+  border: none;
+  /* border-radius: 50px !important; */
+}
+.home .cards .my-card .card-body {
+  background-color: #323544;
+  color: #fff;
+}
+.home .cards .card-header {
+  background-color: #2d303d;
+  color: rgb(191, 193, 200);
+}
+
+.contact .input {
+  width: 60%;
+  position: relative;
+}
+.contact .input input {
+  width: 100%;
+  padding: 20px 5px;
+  border-radius: 25px;
+  border: 0;
+  background-color: #1e202b;
+}
+.contact .input button {
+  position: absolute;
+  top: 5%;
+  right: 5px;
+  width: 20%;
+  height: 90%;
+  border: 0;
+  background-color: #009ad8;
+  border-radius: 25px;
+  color: #fff;
+}
+.contact {
+  background-color: #323544;
+}
+
+.contact .icon-meda .icon {
+  margin-left: 10px;
+
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e202b;
+  transition: background-color 0.3s;
+}
+.contact .icon-meda .icon i {
+  font-size: 25px;
+  color: #009ad8;
+  transition: color 0.3s;
+}
+.contact .icon-meda .icon:hover {
+  background-color: #009ad8;
+}
+.contact .icon-meda .icon:hover i {
+  color: #fff;
+}
+
+#find {
+  cursor: pointer;
+  z-index: 5;
+}
+.my-card {
+  height: 260px;
+  z-index: 555;
+}
+
+#todayDgree,
+#tomDgreeBig,
+#tomDgreeSma,
+#nextDgreeBig,
+#nextDgreeSma {
+  font-size: 25px;
+  color: #fff;
+}
+.span-style {
+  font-size: 25px;
+  color: #fff;
+}
